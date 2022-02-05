@@ -1,0 +1,105 @@
+body
+{
+  background:linear-gradient(pink,white);
+  text-align:center;
+}
+
+.main
+{
+  width:500px;
+  background:#ffffff70;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.control
+{
+  display:flex;
+    width:390px;
+  padding:20px 50px 10px 50px;
+}
+
+.result
+{
+  width:390px;
+  padding:10px 50px 10px 50px;
+}
+
+.control label
+{
+  margin-right:10px;
+}
+.result input[type="number"]
+{
+  width:50px;
+  margin-left:5px;
+}
+.result input[type="text"]
+{
+  width:250px;
+  margin-left:10px;
+  position:relative;
+  top:1.5px;
+}
+.result span
+{
+  margin-left:10px;
+  margin-right:5px;
+  position:relative;
+  top:1.5px;
+}
+
+.info
+{
+  text-align:right;
+}
+
+#reset_button
+{
+  margin-left:10px;
+  margin-right:15px;
+}
+
+.settings
+{
+  display:flex;
+  width:300px;
+}
+
+#lotteries
+{
+  width:50px;
+}
+
+#price
+{
+ width:50px;
+
+}
+
+#times
+{
+  width:50px;
+}
+
+#draw_button
+{
+  width:70px;
+}
+
+.item_settings input[type="number"]
+{
+  width:50px;
+  margin-left:10px;
+}
+
+.item_settings input[type="text"]
+{
+  width:250px;
+  margin-left:10px;
+}
+
+#reload_button
+{
+  font-size:16px;
+}

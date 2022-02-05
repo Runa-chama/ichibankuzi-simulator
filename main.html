@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>一番くじシュミレーター</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="main">
+    <div class="control">
+      <div class="settings">
+        <span>残り</span><input type="number" id="lotteries" readonly><label>枚</label>
+        <input type="number" value="680" id="price"><label>円</label>
+        <input type="number" value="1" id="times"><label>回</label>
+      </div>
+      <button onclick="draw()" id="draw_button">引く</button>
+    </div>
+    <div class="result">
+      <p>A賞<input type="number" id="item_A_result" value="0">個<input type="text" id="item_A_name" readonly></p>
+      <p>B賞<input type="number" id="item_B_result" value="0">個<input type="text" id="item_B_name" readonly></p>
+      <p>C賞<input type="number" id="item_C_result" value="0">個<input type="text" id="item_C_name" readonly></p>
+      <p>D賞<input type="number" id="item_D_result" value="0">個<input type="text" id="item_D_name" readonly></p>
+      <p>E賞<input type="number" id="item_E_result" value="0">個<input type="text" id="item_E_name" readonly></p>
+      <p>F賞<input type="number" id="item_F_result" value="0">個<input type="text" id="item_F_name" readonly></p>
+      <p>G賞<input type="number" id="item_G_result" value="0">個<input type="text" id="item_G_name" readonly></p>
+      <p>H賞<input type="number" id="item_H_result" value="0">個<input type="text" id="item_H_name" readonly></p>
+      <p class="info">代金<input type="number" id="spent_money" readonly>円<span>回数</span><input type="number" id="drew_times"><button id="reset_button" onclick="reset()">リセット</button></p>
+    </div>
+    <div class="item_settings">
+      <span>商品数設定</span>
+      <br>
+      <p>A賞<input type="number" id="item_A" value="2">個<input type="text" id="item_A_setname"></p>
+      <p>B賞<input type="number" id="item_B" value="2">個<input type="text" id="item_B_setname"></p>
+      <p>C賞<input type="number" id="item_C" value="2">個<input type="text" id="item_C_setname"></p>
+      <p>D賞<input type="number" id="item_D" value="8">個<input type="text" id="item_D_setname"></p>
+      <p>E賞<input type="number" id="item_E" value="12">個<input type="text" id="item_E_setname"></p>
+      <p>F賞<input type="number" id="item_F" value="20">個<input type="text" id="item_F_setname"></p>
+      <p>G賞<input type="number" id="item_G" value="20">個<input type="text" id="item_G_setname"></p>
+      <p>H賞<input type="number" id="item_H" value="20">個<input type="text" id="item_H_setname"></p>
+      <button onclick="reload()" id="reload_button">更新</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
